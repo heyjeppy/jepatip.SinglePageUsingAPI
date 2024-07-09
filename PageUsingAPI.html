@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "PageUsingAPI_design.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <!-- NAVIGATION SECTION -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">nikko</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#about-nikko">About</a>
+            <a class="nav-link" href="#about-nikko">Support us!</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SEARCH BOX SECTION -->
+    <div class = "container" id="home">
+        <div class = "photo-wrapper">
+            <div class = "photo-search">
+                <h2 class = "title">nikko</h2>
+                <blockquote>beautiful smiles within</blockquote>
+              <div class = "photo-search-box">
+                <input type = "text" class = "search-control" placeholder="Search a photo" id = "search-input">
+                  <button type = "submit" class = "search-btn btn" id = "search-btn">
+                    <i class = "fas fa-search"></i>
+                  </button>
+              </div>
+            </div>
+            <!-- FETCH IMAGES -->
+            <div class = "photo-result">
+              <div id= "photo"></div>
+            </div>
+
+
+            <div class = "photo-details">
+                <!-- close btn -->
+                <button type = "button" class = "btn photo-close-btn" id = "photo-close-btn">
+                  <i class = "fas fa-times"></i>
+                </button>
+
+                  <!-- content -->
+                <div class = "photo-details-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT CONTACT SECTION -->
+    <div class="about-us" id="about-nikko">
+      <div class="container-fluid">
+        <div class="container-sm">
+          <div class="about">
+          <h4>About us</h4>
+          <p>Beautiful smiles within every photo we offer to you! <br>
+            A tagline we give to our customers for the high-quality photos <br> on every high-quality memory they want to keep. <br> 
+            Nikko is a photography stock company that offers HD photos that <br> are easy to search for.</p>
+          </div>
+          
+            <div class="portfolio-contact">
+            <div class="message-me">
+              <h5>Contact us</h5>
+              <form>
+                <div class="form-group">
+                    <label for="full-name">Name</label>
+                    <input type="text" class="form-control" id="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-contact-details">
+          <div>
+              <h4> 
+                  <img src="https://cdn-icons-png.flaticon.com/512/455/455705.png" alt="" /> +63 977 299 4572
+              </h4>
+          </div>
+          <div>
+              <h4>
+                <img src="https://www.freepngimg.com/download/email_marketing/62507-icons-marketing-webmail-computer-email-icon.png" alt="" /> nikkonikoniko@gmail.com
+              </h4>
+          </div>
+          <div>
+              <h4>
+                <img src="https://vectorified.com/images/place-icon-28.png" alt="" /> Siargao, Philippines
+              </h4>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <script src = "PageUsingAPI.js"></script>
+</body>
+
+<!-- FOOTER -->
+<footer>
+  <h5>Copyright © 2024 All rights reserved.</h5>
+</footer>
+</html>
